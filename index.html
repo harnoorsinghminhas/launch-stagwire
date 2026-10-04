@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Meta CSP is the backup. Ship the same policy as a CloudFront response-headers policy, plus HSTS, frame-ancestors 'none', X-Content-Type-Options, Referrer-Policy, Permissions-Policy. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src https://acp9reat3l.execute-api.us-east-1.amazonaws.com; form-action 'self'; base-uri 'none'; object-src 'none'; manifest-src 'self'; upgrade-insecure-requests; require-trusted-types-for 'script'; trusted-types 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self' https://media.theagentsignal.com; connect-src https://acp9reat3l.execute-api.us-east-1.amazonaws.com https://siagentsignal.com; form-action 'self'; base-uri 'none'; object-src 'none'; manifest-src 'self'; upgrade-insecure-requests; require-trusted-types-for 'script'; trusted-types 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Stag Wire | Superintelligence (SI) &amp; Artificial Intelligence (AI) funding and deals wire</title>
 <meta name="description" content="Superintelligence (SI) is the new artificial intelligence (AI). Stag Wire is the funding and deals wire: who raised, who bought whom, which deals matter. Join the free preview.">
@@ -76,6 +76,21 @@
     </ul>
   </div>
 </section>
+
+<section class="hour" id="this-hour" aria-labelledby="hour-h">
+  <div class="hour-in">
+    <p class="hour-kick">Live from our news pipeline &middot; Founders&rsquo; Preview</p>
+    <h2 id="hour-h">This hour</h2>
+    <p class="hour-meta"><span id="hour-updated"></span><span id="hour-count"></span></p>
+    <p class="hour-warm" id="hour-warm">The hourly brief is warming up. Check back in a few minutes.</p>
+    <ol class="hour-stories" id="hour-stories"></ol>
+    <div class="hour-audio" id="hour-audio" hidden><p class="hour-aud-l">Listen to this hour (<span id="hour-secs"></span>)</p><audio id="hour-player" controls preload="none"></audio></div>
+    <p class="hour-tid" id="hour-tid"></p>
+    <div id="hour-ticker-wrap" hidden><p class="hour-tkh">Headline ticker</p><ul class="hour-ticker" id="hour-ticker"></ul></div>
+    <p class="hour-note">Each story is labelled CONFIRMED (the source says so on the record), REPORTED (outlets carry it, not confirmed) or STILL OPEN (unresolved). Every story links to its outlet and opens in a new tab.</p>
+  </div>
+</section>
+
 
 <section class="sec" id="wire" aria-labelledby="wire-h">
   <div class="wrap">
@@ -236,5 +251,6 @@
   </div>
 </dialog>
 <script src="assets/app.js" defer></script>
+<script src="assets/feed.js" defer></script>
 </body>
 </html>
